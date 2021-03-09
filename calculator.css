@@ -1,0 +1,138 @@
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  background:#efefef;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+#orange{
+  background-color:rgb(245, 85, 27);
+  width:45vw;
+  height:20vh;
+  position: absolute;
+  top:0;
+  border:1px dotted white;
+  display:flex;
+  align-items: center;
+  justify-content:flex-end;
+  
+}
+#pop{
+  color:rgb(71, 22, 5);
+  font-weight:bold;
+  font-size:50px;
+  text-align:right;
+  position:relative;
+  right:50px;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#blue {
+  background-color:rgb(4, 126, 148);
+  width:45vw;
+  height:80vh;
+  position:absolute;
+  bottom:0;
+  z-index:0;
+}
+
+.combined{
+  position:absolute;
+  width:18vw;
+  background-color:rgb(4, 126, 148);
+  z-index: 10000;
+  bottom:20px;
+  height:15vh;
+  right:0px;
+  border:none;
+  
+}
+
+.combined  .orange {
+  width:100%;
+  position:absolute;
+  background-color:rgb(230, 116, 74);
+  height:50%;
+  border-top-left-radius: 50px;
+  border:2px dotted white;
+}
+
+.combined .blue{
+  width:100%;
+  position:absolute;
+  background-color:rgba(6, 172, 238, 0.603);
+  height:50%;
+  border-bottom-left-radius:50px;
+  bottom:0;
+  border:1px dotted white;;
+}
+
+.container{
+  min-height:100vh;
+  width:40vw;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+@media screen and (max-width:768px) {
+  .container{width:100vw;}
+	#blue, #orange {width:100%;}
+}
+
+.calculator{
+  width:400px;
+  border:15px solid rgb(192, 192, 192);
+  border-radius:5px;
+  font-family:monospace;
+  z-index:9998;
+}
+
+.calculator-input{
+  background:black;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator-input input {
+  background:rgb(181, 231, 189);
+  border:none;
+  outline:none;
+  padding:20px 10px;
+  width:70%;
+  border-bottom:5px solid black;
+  border-top:5px solid black;
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+  text-align:right;
+  font-size:40px;
+  color:black
+}
+.calculator-input input:focus{
+  background:rgb(181, 231, 189);
+}
+
+.calc-buttons{
+  background:rgb(0,0,0);
+  border:1px solid rgb(223, 221, 221);
+  padding:8px 15px;
+  color:rgb(223, 221, 221);
+  font-size:18px;
+}
+.calc-buttons:hover{
+  background:rgb(223, 221, 221);
+  color:black;
+}
+
+.calculator-buttons{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+  border:10px solid black;
+}
