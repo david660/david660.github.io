@@ -81,14 +81,7 @@ body{
   justify-content:center;
 }
 
-@media Screen and (max-width:768px) {
-  .container{
-    width:100%;
-  }
-	#blue, #orange {
-    width:100%;
-  }
-}
+
 
 .calculator{
   width:400px;
@@ -139,4 +132,16 @@ body{
   display:grid;
   grid-template-columns:1fr 1fr 1fr 1fr 1fr;
   border:10px solid black;
+}
+
+@media screen and (max-width:768px) {
+  .container{
+    width:100%;
+  }
+	#blue, #orange {
+    width:100%;
+  }
+  .calculator{
+    width:80%;  
+  }
 }
