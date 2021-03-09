@@ -48,8 +48,5 @@ function initAll() {
     let ans=Math.sqrt(num);
     let resolve=parseFloat(ans).toFixed(2);
     display.value=resolve;
-  }
-
-
-  
+  }  
 }
